@@ -16,7 +16,7 @@
   "license": "MIT",
   "dependencies": {
     "@ove-lib/appbase": "0.6.1",
-    "d3": "6.7.0",
+    "d3": "7.1.1",
     "jquery": "3.6.0"
   }
 }
