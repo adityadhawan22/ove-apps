@@ -14,12 +14,5 @@
   "keywords": [],
   "author": "James Scott-Brown <james.scott-brown@imperial.ac.uk>",
   "license": "MIT",
-  "dependencies": {
-    "@ove-lib/appbase": "0.6.1",
-    "d3-dsv": "2.0.0",
-    "jquery": "3.6.0",
-    "vega": "5.20.2",
-    "vega-embed": "6.18.2",
-    "vega-lite": "5.1.0"
-  }
+  "dependencies": {}
 }

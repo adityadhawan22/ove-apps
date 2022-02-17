@@ -31,7 +31,26 @@
     "jquery": "3.6.0",
     "openseadragon": "2.4.2",
     "portfinder": "^1.0.28",
-    "tslib": "^2.0.0"
+    "tslib": "^2.0.0",
+    "@fortawesome/fontawesome-free": "5.15.3",
+    "openvidu-browser": "2.17.0",
+    "openvidu-node-client": "2.17.0",
+    "odata-parser": "1.4.1",
+    "sigma": "1.2.1",
+    "ws": "7.4.5",
+    "pdfjs-dist": "2.7.570",
+    "request": "2.88.2",
+    "@carto/carto.js": "4.2.1",
+    "leaflet": "1.7.1",
+    "ol": "6.5.0",
+    "topojson-client": "3.1.0",
+    "torque.js": "3.1.1",
+    "howler": "2.2.1",
+    "d3-dsv": "2.0.0",
+    "vega": "5.20.2",
+    "vega-embed": "6.18.2",
+    "vega-lite": "5.1.0",
+    "qrious": "4.0.2"
   },
   "author": "Aditya Dhawan <adhawan@ic.ac.uk>"
 }
