@@ -27,7 +27,7 @@
       "cwd": "./dist/apps/ove-app-html",
       "kill_timeout": 3000,
       "restart_delay": 3000,
-      "script": "npm",
+      "script": "node main.js",
       "args": "run start",
       "env": {
         "PORT": "8083"
@@ -38,7 +38,7 @@
       "cwd": "./dist/apps/ove-app-videos",
       "kill_timeout": 3000,
       "restart_delay": 3000,
-      "script": "npm",
+      "script": "node main.js",
       "args": "run start",
       "env": {
         "PORT": "8084"
@@ -49,7 +49,7 @@
       "cwd": "./dist/apps/ove-app-networks",
       "kill_timeout": 3000,
       "restart_delay": 3000,
-      "script": "npm",
+      "script": "node main.js",
       "args": "run start",
       "env": {
         "PORT": "8085"
@@ -60,7 +60,7 @@
       "cwd": "./dist/apps/ove-app-charts",
       "kill_timeout": 3000,
       "restart_delay": 3000,
-      "script": "npm",
+      "script": "node main.js",
       "args": "run start",
       "env": {
         "PORT": "8086"
@@ -71,7 +71,7 @@
       "cwd": "./dist/apps/ove-app-alignment",
       "kill_timeout": 3000,
       "restart_delay": 3000,
-      "script": "npm",
+      "script": "node main.js",
       "args": "run start",
       "env": {
         "PORT": "8087"
@@ -82,7 +82,7 @@
       "cwd": "./dist/apps/ove-app-audio",
       "kill_timeout": 3000,
       "restart_delay": 3000,
-      "script": "npm",
+      "script": "node main.js",
       "args": "run start",
       "env": {
         "PORT": "8088"
@@ -93,7 +93,7 @@
       "cwd": "./dist/apps/ove-app-svg",
       "kill_timeout": 3000,
       "restart_delay": 3000,
-      "script": "npm",
+      "script": "node main.js",
       "args": "run start",
       "env": {
         "PORT": "8089"
@@ -104,7 +104,7 @@
       "cwd": "./dist/apps/ove-app-whiteboard",
       "kill_timeout": 3000,
       "restart_delay": 3000,
-      "script": "npm",
+      "script": "node main.js",
       "args": "run start",
       "env": {
         "PORT": "8090"
@@ -115,7 +115,7 @@
       "cwd": "./dist/apps/ove-app-pdf",
       "kill_timeout": 3000,
       "restart_delay": 3000,
-      "script": "npm",
+      "script": "node main.js",
       "args": "run start",
       "env": {
         "PORT": "8091"
@@ -126,7 +126,7 @@
       "cwd": "./dist/apps/ove-app-controller",
       "kill_timeout": 3000,
       "restart_delay": 3000,
-      "script": "npm",
+      "script": "node main.js",
       "args": "run start",
       "env": {
         "PORT": "8092"
@@ -137,7 +137,7 @@
       "cwd": "./dist/apps/ove-app-replicator",
       "kill_timeout": 3000,
       "restart_delay": 3000,
-      "script": "npm",
+      "script": "node main.js",
       "args": "run start",
       "env": {
         "PORT": "8093"
@@ -148,7 +148,7 @@
       "cwd": "./dist/apps/ove-app-webrtc",
       "kill_timeout": 3000,
       "restart_delay": 3000,
-      "script": "npm",
+      "script": "node main.js",
       "args": "run start",
       "env": {
         "PORT": "8094"
@@ -159,7 +159,7 @@
       "cwd": "./dist/apps/ove-app-qrcode",
       "kill_timeout": 3000,
       "restart_delay": 3000,
-      "script": "npm",
+      "script": "node main.js",
       "args": "run start",
       "env": {
         "PORT": "8095"
