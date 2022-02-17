@@ -1,0 +1,11 @@
+.outer {
+    display: table;
+    position: absolute;
+}
+#contentDiv.openseadragon {
+    display: table-cell;
+    vertical-align: middle;
+}
+body {
+    background: #222;
+}

@@ -1,4 +1,7 @@
 {
   "version": 2,
-  "projects": {}
+  "projects": {
+    "ove-app-images": "apps/ove-app-images",
+    "ove-app-alignment": "apps/ove-app-alignment"
+  }
 }

@@ -27,7 +27,7 @@ Below are our core plugins:
 - [Express](https://expressjs.com)
   - `npm install --save-dev @nrwl/express`
 - [Node](https://nodejs.org)
-  - `npm install --save-dev @nrwl/node`
+  - ```npm install --save-dev @nrwl/node```
 
 There are also many [community plugins](https://nx.dev/community) you could add.
 

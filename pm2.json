@@ -1,0 +1,169 @@
+{
+  "apps": [
+    {
+      "name": "@ove/ove-app-maps",
+      "cwd": "./dist/apps/ove-app-maps",
+      "kill_timeout": 3000,
+      "restart_delay": 3000,
+      "script": "node main.js",
+      "args": "run start",
+      "env": {
+        "PORT": "8081"
+      }
+    },
+    {
+      "name": "@ove/ove-app-images",
+      "cwd": "./dist/apps/ove-app-images",
+      "kill_timeout": 3000,
+      "restart_delay": 3000,
+      "script": "node main.js",
+      "args": "run start",
+      "env": {
+        "PORT": "8082"
+      }
+    },
+    {
+      "name": "@ove/ove-app-html",
+      "cwd": "./dist/apps/ove-app-html",
+      "kill_timeout": 3000,
+      "restart_delay": 3000,
+      "script": "npm",
+      "args": "run start",
+      "env": {
+        "PORT": "8083"
+      }
+    },
+    {
+      "name": "@ove/ove-app-videos",
+      "cwd": "./dist/apps/ove-app-videos",
+      "kill_timeout": 3000,
+      "restart_delay": 3000,
+      "script": "npm",
+      "args": "run start",
+      "env": {
+        "PORT": "8084"
+      }
+    },
+    {
+      "name": "@ove/ove-app-networks",
+      "cwd": "./dist/apps/ove-app-networks",
+      "kill_timeout": 3000,
+      "restart_delay": 3000,
+      "script": "npm",
+      "args": "run start",
+      "env": {
+        "PORT": "8085"
+      }
+    },
+    {
+      "name": "@ove/ove-app-charts",
+      "cwd": "./dist/apps/ove-app-charts",
+      "kill_timeout": 3000,
+      "restart_delay": 3000,
+      "script": "npm",
+      "args": "run start",
+      "env": {
+        "PORT": "8086"
+      }
+    },
+    {
+      "name": "@ove/ove-app-alignment",
+      "cwd": "./dist/apps/ove-app-alignment",
+      "kill_timeout": 3000,
+      "restart_delay": 3000,
+      "script": "npm",
+      "args": "run start",
+      "env": {
+        "PORT": "8087"
+      }
+    },
+    {
+      "name": "@ove/ove-app-audio",
+      "cwd": "./dist/apps/ove-app-audio",
+      "kill_timeout": 3000,
+      "restart_delay": 3000,
+      "script": "npm",
+      "args": "run start",
+      "env": {
+        "PORT": "8088"
+      }
+    },
+    {
+      "name": "@ove/ove-app-svg",
+      "cwd": "./dist/apps/ove-app-svg",
+      "kill_timeout": 3000,
+      "restart_delay": 3000,
+      "script": "npm",
+      "args": "run start",
+      "env": {
+        "PORT": "8089"
+      }
+    },
+    {
+      "name": "@ove/ove-app-whiteboard",
+      "cwd": "./dist/apps/ove-app-whiteboard",
+      "kill_timeout": 3000,
+      "restart_delay": 3000,
+      "script": "npm",
+      "args": "run start",
+      "env": {
+        "PORT": "8090"
+      }
+    },
+    {
+      "name": "@ove/ove-app-pdf",
+      "cwd": "./dist/apps/ove-app-pdf",
+      "kill_timeout": 3000,
+      "restart_delay": 3000,
+      "script": "npm",
+      "args": "run start",
+      "env": {
+        "PORT": "8091"
+      }
+    },
+    {
+      "name": "@ove/ove-app-controller",
+      "cwd": "./dist/apps/ove-app-controller",
+      "kill_timeout": 3000,
+      "restart_delay": 3000,
+      "script": "npm",
+      "args": "run start",
+      "env": {
+        "PORT": "8092"
+      }
+    },
+    {
+      "name": "@ove/ove-app-replicator",
+      "cwd": "./dist/apps/ove-app-replicator",
+      "kill_timeout": 3000,
+      "restart_delay": 3000,
+      "script": "npm",
+      "args": "run start",
+      "env": {
+        "PORT": "8093"
+      }
+    },
+    {
+      "name": "@ove/ove-app-webrtc",
+      "cwd": "./dist/apps/ove-app-webrtc",
+      "kill_timeout": 3000,
+      "restart_delay": 3000,
+      "script": "npm",
+      "args": "run start",
+      "env": {
+        "PORT": "8094"
+      }
+    },
+    {
+      "name": "@ove/ove-app-qrcode",
+      "cwd": "./dist/apps/ove-app-qrcode",
+      "kill_timeout": 3000,
+      "restart_delay": 3000,
+      "script": "npm",
+      "args": "run start",
+      "env": {
+        "PORT": "8095"
+      }
+    }
+  ]
+}
