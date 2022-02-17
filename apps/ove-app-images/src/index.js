@@ -285,7 +285,7 @@ async function findPort(start = 8080) {
 }
 
 (async () => {
-  const port = process.env.PORT || (await findPort());
+  const port = process.env.PORT || (await findPort()) || 1;
 
   server.listen(port);
   log.info(Constants.APP_NAME, 'application started, port:', port);
