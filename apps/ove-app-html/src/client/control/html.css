@@ -1,0 +1,30 @@
+.wrapper {
+    height: 60vh;
+}
+body {
+    background: #222;
+}
+
+.operations {
+    z-index: 1;
+    position: absolute;
+    bottom: 40px;
+    text-align:center;
+    width: 100%;
+}
+
+label, .background {
+    display: inline-block;
+    width: 48px; height: 48px;
+    position: relative;
+    padding-right: 5px; /* required for the oval shape */
+    margin-right:5px;
+    border-radius: 50%;
+    text-shadow: 1px 1px 2px #000;
+    color: #fff;
+    font-size: 32px;
+    line-height: 46px;
+}
+.background {background: snow;}
+
+#btnRefresh { background: url(images/redo.svg) center/35% no-repeat; opacity: 0.8; padding-left: 2.5px; }

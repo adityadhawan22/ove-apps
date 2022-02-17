@@ -1,0 +1,137 @@
+tags:
+- name: "operations"
+  description: "Operations that can be performed on one or all networks"
+paths:
+  /operation/showOnly:
+    post:
+      tags:
+      - "operations"
+      summary: "Shows only the nodes or edges that match the provider filters, and filters the display to hide nodes or edges that do not match the provided filters. Filters must be specified according to the OData v3.0 $filter specification."
+      produces:
+      - "application/json"
+      parameters:
+      - name: "filter"
+        in: "query"
+        type: "string"
+        description: "Filter for nodes"
+        required: false
+      - name: "edgeFilter"
+        in: "query"
+        type: "string"
+        description: "Filter for edges"
+        required: false
+      - name: "oveSectionId"
+        in: "query"
+        type: "integer"
+        format: "int32"
+        description: "Section ID"
+        required: false
+      responses:
+        200:
+          description: "successful operation"
+  /operation/color:
+    post:
+      tags:
+      - "operations"
+      summary: "Recolors nodes or edges that match provider filters. Filters must be specified according to the OData v3.0 $filter specification."
+      produces:
+      - "application/json"
+      parameters:
+      - name: "filter"
+        in: "query"
+        type: "string"
+        description: "Filter for nodes"
+        required: false
+      - name: "color"
+        in: "query"
+        type: "string"
+        description: "New color for nodes in the format rgb(x, y, z) or rgba(x, y, z, a), where x, y, z are integers in the range 0-255 and a is a number between 0.0 (fully transparent) and 1.0 (fully opaque)"
+        required: false
+      - name: "edgeFilter"
+        in: "query"
+        type: "string"
+        description: "Filter for edges"
+        required: false
+      - name: "edgeColor"
+        in: "query"
+        type: "string"
+        description: "New color for edges in the format rgb(x, y, z) or rgba(x, y, z, a), where x, y, z are integers in the range 0-255 and a is a number between 0.0 (fully transparent) and 1.0 (fully opaque)"
+        required: false
+      - name: "oveSectionId"
+        in: "query"
+        type: "integer"
+        format: "int32"
+        description: "Section ID"
+        required: false
+      responses:
+        200:
+          description: "successful operation"
+  /operation/labelNodes:
+    post:
+      tags:
+      - "operations"
+      summary: "labels nodes that may optionally match provider filter. Filters must be specified according to the OData v3.0 $filter specification."
+      produces:
+      - "application/json"
+      parameters:
+      - name: "property"
+        in: "query"
+        type: "string"
+        description: "The property used for the labels"
+        required: true
+      - name: "filter"
+        in: "query"
+        type: "string"
+        description: "Filter for nodes"
+        required: false
+      - name: "oveSectionId"
+        in: "query"
+        type: "integer"
+        format: "int32"
+        description: "Section ID"
+        required: false
+      responses:
+        200:
+          description: "successful operation"
+  /operation/neighborsOf:
+    post:
+      tags:
+      - "operations"
+      summary: "Displays neighbors of given node"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "node"
+        in: "query"
+        type: "string"
+        description: "Name of node"
+        required: true
+      - name: "oveSectionId"
+        in: "query"
+        type: "integer"
+        format: "int32"
+        description: "Section ID"
+        required: false
+      responses:
+        200:
+          description: "successful operation"
+  /operation/reset:
+    post:
+      tags:
+      - "operations"
+      summary: "Resets the graph to its starting point"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "oveSectionId"
+        in: "query"
+        type: "integer"
+        format: "int32"
+        description: "Section ID"
+        required: false
+      responses:
+        200:
+          description: "successful operation"
+externalDocs:
+  description: "Find out more about OVE"
+  url: "https://dsi.gitbook.io/ove"

@@ -1,0 +1,27 @@
+{
+  "name": "@ove/ove-app-maps",
+  "private": true,
+  "version": "0.6.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"No tests specified\" && exit 0",
+    "clean": "npx rimraf dist",
+    "build": "npx babel-cli src --out-dir dist --copy-files",
+    "start": "node dist/index.js --color",
+    "start:dev": "babel-node src/index.js",
+    "lint": "eslint src/. --ext .js"
+  },
+  "keywords": [],
+  "author": "Senaka Fernando <senaka.fernando15@imperial.ac.uk>",
+  "license": "MIT",
+  "dependencies": {
+    "@carto/carto.js": "4.2.1",
+    "@ove-lib/appbase": "0.6.1",
+    "leaflet": "1.7.1",
+    "jquery": "3.6.0",
+    "ol": "6.5.0",
+    "request": "2.88.2",
+    "topojson-client": "3.1.0",
+    "torque.js": "3.1.1"
+  }
+}

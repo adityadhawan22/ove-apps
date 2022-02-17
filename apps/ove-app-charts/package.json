@@ -1,0 +1,25 @@
+{
+  "name": "@ove/ove-app-charts",
+  "private": true,
+  "version": "0.6.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"No tests specified\" && exit 0",
+    "clean": "npx rimraf dist",
+    "build": "npx babel-cli src --out-dir dist --copy-files",
+    "start": "node dist/index.js --color",
+    "start:dev": "babel-node src/index.js",
+    "lint": "eslint src/. --ext .js"
+  },
+  "keywords": [],
+  "author": "James Scott-Brown <james.scott-brown@imperial.ac.uk>",
+  "license": "MIT",
+  "dependencies": {
+    "@ove-lib/appbase": "0.6.1",
+    "d3-dsv": "2.0.0",
+    "jquery": "3.6.0",
+    "vega": "5.20.2",
+    "vega-embed": "6.18.2",
+    "vega-lite": "5.1.0"
+  }
+}

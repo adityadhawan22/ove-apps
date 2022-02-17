@@ -1,0 +1,23 @@
+{
+  "name": "@ove/ove-app-controller",
+  "private": true,
+  "version": "0.6.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"No tests specified\" && exit 0",
+    "clean": "npx rimraf dist",
+    "build": "npx babel-cli src --out-dir dist --copy-files",
+    "start": "node dist/index.js --color",
+    "start:dev": "babel-node src/index.js",
+    "lint": "eslint src/. --ext .js"
+  },
+  "keywords": [],
+  "author": "Senaka Fernando <senaka.fernando15@imperial.ac.uk>",
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "5.15.3",
+    "@ove-lib/appbase": "0.6.1",
+    "d3": "6.7.0",
+    "jquery": "3.6.0"
+  }
+}

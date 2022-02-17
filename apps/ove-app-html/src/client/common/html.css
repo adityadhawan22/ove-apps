@@ -1,0 +1,30 @@
+.unselectable {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+body {
+    color: #FFF;
+    margin: 0px;
+    overflow: hidden;
+}
+.wrapper, .html_frame {
+    top: 0;
+    left: 0;
+    border: 0 none;
+    display: block;
+    width: 100%;
+}
+.wrapper {
+    position: fixed;
+}
+.html_frame {
+    position: absolute;
+    -moz-transform-origin: top left;
+    -o-transform-origin: top left;
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    zoom: 1;
+}

@@ -1,0 +1,14 @@
+body {
+    background: #222;
+}
+
+.controller {
+    -ms-touch-action: none;
+    z-index: 1;
+    position: absolute;
+    display: inline-block;
+    cursor: grab;
+}
+.controller:active { 
+    cursor: grabbing;
+}

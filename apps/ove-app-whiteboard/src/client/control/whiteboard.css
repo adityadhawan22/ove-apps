@@ -1,0 +1,62 @@
+body {
+    background: #222;
+}
+.drawCanvas:hover, .drawCanvas:active {
+  /* Please note that %23 is used instead of # due to a limitation in Chrome, https://www.chromestatus.com/features/5656049583390720 */
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" style="font-size: 32px; fill: %23404040"><g transform="rotate(180,27.5,16)"><text y="30" x="30">&%23x270E;</text></g></svg>'),
+  pointer;
+}
+.colorSwatch {
+    position: absolute;
+    bottom: 40px;
+    text-align:center;
+    width: 100%
+}
+
+input[type=radio] {
+    margin: 0;
+    display: none;
+    width: 0;
+}
+input[type=radio]:checked + label::after {
+    content: '\270E';
+    transform: rotate(180deg);
+    position: absolute;
+    left: 15px;
+    top: 1px;
+}
+
+label, .background {
+    display: inline-block; 
+    width: 48px; height: 48px; 
+    position: relative;
+    padding-right: 5px; /* required for the oval shape */
+    margin-right:5px;
+    border-radius: 50%;
+    text-shadow: 1px 1px 2px #000;
+    color: #fff;
+    font-size: 32px;
+    line-height: 46px;
+}
+label[for=color01] {background: gold;}
+label[for=color02] {background: darkorange;}
+label[for=color03] {background: navy;}
+label[for=color04] {background: yellowgreen;}
+label[for=color05] {background: firebrick;}
+label[for=color06] {background: powderblue;}
+.background {background: snow;}
+
+#btnUndo {background: url(images/undo-alt.svg) center/45% no-repeat; opacity: 0.1;}
+#btnUndo.active {background: url(images/undo-alt.svg) center/45% no-repeat; opacity: 0.8;}
+#btnRedo {background: url(images/redo-alt.svg) center/45% no-repeat; opacity: 0.1;}
+#btnRedo.active {background: url(images/redo-alt.svg) center/45% no-repeat; opacity: 0.8;}
+#btnErase {background: url(images/eraser.svg) center/45% no-repeat; opacity: 0.8;}
+#btnDownload {background: url(images/download.svg) center/45% no-repeat; opacity: 0.8;}
+#btnUpload {background: url(images/upload.svg) center/45% no-repeat; opacity: 0.8;}
+
+#btnText {background: snow url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" style="font-size: 24px; fill: black"><g><text y="39" x="16">Aa</text></g></svg>') center no-repeat;}
+#btnText.active {background: snow url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" style="font-size: 24px; fill: royalblue"><g><text y="39" x="16">Aa</text></g></svg>') center no-repeat;}
+#btnIncFontSize {background: snow url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" style="font-size: 24px; fill: black"><g><text y="39" x="16">A+</text></g></svg>') center no-repeat;}
+#btnIncFontSize.inactive {background: snow url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" style="font-size: 24px; fill: gainsboro"><g><text y="39" x="16">A+</text></g></svg>') center no-repeat;}
+#btnDecFontSize {background: snow url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" style="font-size: 24px; fill: black"><g><text y="39" x="16">A-</text></g></svg>') center no-repeat;}
+#btnDecFontSize.inactive {background: snow url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" style="font-size: 24px; fill: gainsboro"><g><text y="39" x="16">A-</text></g></svg>') center no-repeat;}

@@ -1,0 +1,9 @@
+{
+  "secret": "MY_SECRET",
+  "states": {
+    "ScreenShare": {
+      "sessionId": "random",
+      "maxSessions": 8
+    }
+  }
+}

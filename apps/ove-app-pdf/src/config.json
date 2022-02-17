@@ -1,0 +1,11 @@
+{
+  "states": {
+    "TAMReview": {
+      "url": "https://raw.githubusercontent.com/mozilla/pdf.js/master/test/pdfs/TAMReview.pdf",
+      "settings": {
+        "scale": 2,
+        "scrolling": "vertical"
+      }
+    }
+  }
+}

@@ -1,0 +1,238 @@
+externalDocs:
+  description: "Find out more about OVE"
+  url: "https://dsi.gitbook.io/ove"
+paths:
+  /operation/bufferStatus:
+    get:
+      parameters:
+      - description: "Section ID"
+        format: int32
+        in: query
+        name: oveSectionId
+        required: false
+        type: integer
+      produces:
+      - application/json
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            properties:
+              status:
+                enum:
+                - complete
+                - buffering
+                type: string
+            type: object
+      summary: "Reads the buffer status of one or all audio"
+      tags:
+      - operations
+  /operation/mute:
+    post:
+      parameters:
+      - description: "Section ID"
+        format: int32
+        in: query
+        name: oveSectionId
+        required: false
+        type: integer
+      produces:
+      - application/json
+      responses:
+        200:
+          description: "successful operation"
+      summary: "Mutes playback one or all audio files"
+      tags:
+      - operations
+  /operation/pause:
+    post:
+      produces:
+      - application/json
+      responses:
+        200:
+          description: "successful operation"
+      summary: "Pauses playback on one or all audio"
+      tags:
+      - operations
+  /operation/play:
+    post:
+      parameters:
+      - description: "Loop playback or not"
+        enum:
+        - "true"
+        - "false"
+        in: query
+        name: loop
+        required: false
+        type: string
+      - description: "volume to play at"
+        in: query
+        name: volume
+        required: false
+        type: float
+      - description: "Section ID"
+        format: int32
+        in: query
+        name: oveSectionId
+        required: false
+        type: integer
+      produces:
+      - application/json
+      responses:
+        200:
+          description: "successful operation"
+      summary: "Plays one or all audio files"
+      tags:
+      - operations
+  /operation/seekTo:
+    post:
+      parameters:
+      - description: "Time in seconds from start of video"
+        format: float
+        in: query
+        name: time
+        required: true
+        type: number
+      - description: "Section ID"
+        format: int32
+        in: query
+        name: oveSectionId
+        required: false
+        type: integer
+      produces:
+      - application/json
+      responses:
+        200:
+          description: "successful operation"
+      summary: "Seeks to a specific time one or all audio files"
+      tags:
+      - operations
+  /operation/setPosition:
+    post:
+      parameters:
+      - description: "x value"
+        format: float
+        in: query
+        name: x
+        required: true
+        type: number
+      - description: "y value"
+        format: float
+        in: query
+        name: "y"
+        required: true
+        type: number
+      - description: "z value"
+        format: float
+        in: query
+        name: z
+        required: true
+        type: number
+      - description: "Section ID"
+        format: int32
+        in: query
+        name: oveSectionId
+        required: false
+        type: integer
+      produces:
+      - application/json
+      responses:
+        200:
+          description: "successful operation"
+      summary: "Sets the positional audio (in 3D) for one or all audio files. The position varies from 0.0 to 1.0 along each Axis. Setting a value greater than one or lesser than zero would make the volume reduce proportionally to provide an approximate pan-effect."
+      tags:
+      - operations
+  /operation/setVolume:
+    post:
+      parameters:
+      - description: "Volume level between 0 and 1.0"
+        format: float
+        in: query
+        name: volume
+        required: true
+        type: number
+      - description: "Section ID"
+        format: int32
+        in: query
+        name: oveSectionId
+        required: false
+        type: integer
+      produces:
+      - application/json
+      responses:
+        200:
+          description: "successful operation"
+      summary: "sets the volume level for one or all audio files"
+      tags:
+      - operations
+  /operation/stop:
+    post:
+      parameters:
+      - description: "Section ID"
+        format: int32
+        in: query
+        name: oveSectionId
+        required: false
+        type: integer
+      produces:
+      - application/json
+      responses:
+        200:
+          description: "successful operation"
+      summary: "Stops playback one or all audio files and resets time to the start"
+      tags:
+      - operations
+  /operation/unmute:
+    post:
+      parameters:
+      - description: "Section ID"
+        format: int32
+        in: query
+        name: oveSectionId
+        required: false
+        type: integer
+      produces:
+      - application/json
+      responses:
+        200:
+          description: "successful operation"
+      summary: "unutes playback one or all audio files"
+      tags:
+      - operations
+  /operation/volDown:
+    post:
+      parameters:
+      - description: "Section ID"
+        format: int32
+        in: query
+        name: oveSectionId
+        required: false
+        type: integer
+      produces:
+      - application/json
+      responses:
+        200:
+          description: "successful operation"
+      summary: "decreases volume in one or all audio files"
+      tags:
+      - operations
+  /operation/volUp:
+    post:
+      parameters:
+      - description: "Section ID"
+        format: int32
+        in: query
+        name: oveSectionId
+        required: false
+        type: integer
+      produces:
+      - application/json
+      responses:
+        200:
+          description: "successful operation"
+      summary: "increases volume in one or all audio files"
+      tags:
+      - operations
+tags:
+- description: "Operations that can be performed on one or all audio"
+  name: operations

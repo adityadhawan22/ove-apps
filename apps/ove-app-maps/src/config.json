@@ -1,0 +1,154 @@
+{
+  "layers_leaflet": [
+    {
+      "type": "L.tileLayer",
+      "visible": false,
+      "wms": false,
+      "url": "http://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}.jpg"
+    },
+    {
+      "type": "L.tileLayer",
+      "visible": false,
+      "wms": false,
+      "url": "https://{s}.tile.thunderforest.com/transport/{z}/{x}/{y}.png"
+    },
+    {
+      "type": "L.tileLayer",
+      "visible": false,
+      "wms": false,
+      "url": "http://{s}.api.cartocdn.com/base-dark/{z}/{x}/{y}.png"
+    },
+    {
+      "type": "L.TorqueLayer",
+      "visible": false,
+      "wms": false,
+      "source": {
+        "user": "viz2",
+        "table": "ow",
+        "zIndex": 100,
+        "cartocss": "Map { -torque-time-attribute: \"date\"; -torque-aggregation-function: \"count(cartodb_id)\"; -torque-frame-count: 760; -torque-animation-duration: 15; -torque-resolution: 2 } #layer {   marker-width: 3;   marker-fill-opacity: 0.8;   marker-fill: #FEE391;    comp-op: \"lighten\";   [value > 2] { marker-fill: #FEC44F; }   [value > 3] { marker-fill: #FE9929; }   [value > 4] { marker-fill: #EC7014; }   [value > 5] { marker-fill: #CC4C02; }   [value > 6] { marker-fill: #993404; }   [value > 7] { marker-fill: #662506; }   [frame-offset = 1] { marker-width: 10; marker-fill-opacity: 0.05;}   [frame-offset = 2] { marker-width: 15; marker-fill-opacity: 0.02;} }"
+      }
+    },
+    {
+      "type": "L.cartoDB",
+      "visible": false,
+      "wms": false,
+      "source": {
+        "apiKey": "default_public",
+        "username": "cartojs-test",
+        "layers": [
+          {
+            "cartocss": "#layer { marker-width: 7; marker-fill: #EE4D5A; marker-line-color: #FFFFFF; }",
+            "sql": "SELECT * FROM ne_10m_populated_places_simple WHERE adm0name = 'United Kingdom'"
+          }
+        ]
+      }
+    }
+  ],
+  "layers": [
+    { 
+      "type": "ol.layer.Tile",
+      "visible": false,
+      "wms": false,
+      "source": {
+        "type": "ol.source.OSM",
+        "config": {
+          "crossOrigin": null,
+          "url": "http://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}.jpg"
+        }
+      }
+    },
+    { 
+      "type": "ol.layer.Tile",
+      "visible": false,
+      "wms": false,
+      "source": {
+        "type": "ol.source.OSM",
+        "config": {
+          "crossOrigin": null,
+          "url": "https://{a-c}.tile.thunderforest.com/transport/{z}/{x}/{y}.png"
+        }
+      }
+    },
+    { 
+      "type": "ol.layer.Tile",
+      "visible": false,
+      "wms": false,
+      "source": {
+        "type": "ol.source.XYZ",
+        "config": {
+          "url": "http://api.cartocdn.com/base-dark/{z}/{x}/{y}.png"
+        }
+      }
+    },
+    {
+      "type": "ol.TorqueLayer",
+      "visible": false,
+      "wms": false,
+      "source": {
+        "user": "viz2",
+        "table": "ow",
+        "zIndex": 100,
+        "cartocss": "Map { -torque-time-attribute: \"date\"; -torque-aggregation-function: \"count(cartodb_id)\"; -torque-frame-count: 760; -torque-animation-duration: 15; -torque-resolution: 2 } #layer {   marker-width: 3;   marker-fill-opacity: 0.8;   marker-fill: #FEE391;    comp-op: \"lighten\";   [value > 2] { marker-fill: #FEC44F; }   [value > 3] { marker-fill: #FE9929; }   [value > 4] { marker-fill: #EC7014; }   [value > 5] { marker-fill: #CC4C02; }   [value > 6] { marker-fill: #993404; }   [value > 7] { marker-fill: #662506; }   [frame-offset = 1] { marker-width: 10; marker-fill-opacity: 0.05;}   [frame-offset = 2] { marker-width: 15; marker-fill-opacity: 0.02;} }"
+      }
+    },
+    { 
+      "type": "ol.layer.Tile",
+      "visible": false,
+      "wms": false,
+      "source": {
+        "type": "ol.source.CartoDB",
+        "config": {
+          "account": "documentation",
+          "config": {
+            "layers": [{
+              "type": "cartodb",
+              "options": {
+                "cartocss_version": "2.1.1",
+                "cartocss": "#layer { polygon-fill: #1E90FF; polygon-opacity: 0.6;}",
+                "sql": "select * from european_countries_e where name = 'France'"
+              }
+            }]
+          }
+        }
+      }
+    }
+  ],
+  "states": {
+    "China": {
+      "center": ["12583620.753127817", "3559924.3994327313"],
+      "resolution": "4891.96981025128",
+      "zoom": "5"
+    },
+    "Europe": {
+      "center": ["1645176.2574059747", "5996125.364937866"],
+      "resolution": "4891.96981025128",
+      "zoom": "5"
+    },
+    "Istanbul": {
+      "center": ["3227384.524394989", "5015629.384609761"],
+      "resolution": "77",
+      "zoom": "11"
+    },
+    "London": {
+      "center": ["-11137.70850550061", "6710544.04980525"],
+      "resolution": "77",
+      "zoom": "12"
+    },
+    "New York": {
+      "center": ["-8233315.9670853345", "4976646.500184319"],
+      "resolution": "77",
+      "zoom": "11"
+    },
+    "Shanghai": {
+      "center": ["13520804.7906671","3660369.86607194"],
+      "resolution": "77",
+      "zoom": "11"
+    },
+    "World": {
+      "center": ["2237104.604446389", "2630450.1354849823"],
+      "resolution": "39135.75848201024",
+      "zoom": "2"
+    }
+  }
+}

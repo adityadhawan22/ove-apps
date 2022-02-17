@@ -1,0 +1,28 @@
+tags:
+- name: "operations"
+  description: "Operations that can be performed on WebRTC sessions"
+paths:
+  /operation/token:
+    get:
+      tags:
+      - "operations"
+      summary: "Generates a session token"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "sessionId"
+        in: "query"
+        type: "string"
+        description: "Session ID"
+        required: true
+      - name: "username"
+        in: "query"
+        type: "string"
+        description: "Username (must be unique)"
+        required: true
+      responses:
+        200:
+          description: "successful operation"
+externalDocs:
+  description: "Find out more about OVE"
+  url: "https://dsi.gitbook.io/ove"

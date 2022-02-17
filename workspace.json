@@ -2,6 +2,19 @@
   "version": 2,
   "projects": {
     "ove-app-images": "apps/ove-app-images",
-    "ove-app-alignment": "apps/ove-app-alignment"
+    "ove-app-alignment": "apps/ove-app-alignment",
+    "ove-app-audio": "apps/ove-app-audio",
+    "ove-app-charts": "apps/ove-app-charts",
+    "ove-app-controller": "apps/ove-app-controller",
+    "ove-app-html": "apps/ove-app-html",
+    "ove-app-maps": "apps/ove-app-maps",
+    "ove-app-networks": "apps/ove-app-networks",
+    "ove-app-pdf": "apps/ove-app-pdf",
+    "ove-app-qrcode": "apps/ove-app-qrcode",
+    "ove-app-replicator": "apps/ove-app-replicator",
+    "ove-app-svg": "apps/ove-app-svg",
+    "ove-app-videos": "apps/ove-app-videos",
+    "ove-app-webrtc": "apps/ove-app-webrtc",
+    "ove-app-whiteboard": "apps/ove-app-whiteboard"
   }
 }

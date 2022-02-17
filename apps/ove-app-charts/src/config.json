@@ -1,0 +1,7 @@
+{
+  "states": {
+    "VegaSample": {
+      "url": "https://raw.githubusercontent.com/vega/vega/master/docs/examples/bar-chart.vg.json"
+    }
+  }
+}

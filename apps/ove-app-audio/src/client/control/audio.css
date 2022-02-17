@@ -1,0 +1,28 @@
+.operations {
+    z-index: 1;
+    position: absolute;
+    bottom: 40px;
+    text-align:center;
+    width: 100%;
+}
+
+label, .background {
+    display: inline-block;
+    width: 48px; height: 48px;
+    position: relative;
+    padding-right: 5px; /* required for the oval shape */
+    margin-right:5px;
+    border-radius: 50%;
+    text-shadow: 1px 1px 2px #000;
+    color: #fff;
+    font-size: 32px;
+    line-height: 46px;
+}
+.background {background: snow;}
+
+#btnPlay { background: url(images/play.svg) center/35% no-repeat; opacity: 0.8; padding-left: 2.5px; }
+#btnPlay.active { background: url(images/pause.svg) center/35% no-repeat; opacity: 0.8; padding-left: 0px; }
+#btnMute { background: url(images/microphone-slash.svg) center/35% no-repeat; opacity: 0.8; padding-left: 0px; }
+#btnMute.active { background: url(images/microphone.svg) center/35% no-repeat; opacity: 0.8; padding-left: 1px; }
+#btnStop { background: url(images/stop.svg) center/35% no-repeat; opacity: 0.1; padding-left: 1px; }
+#btnStop.active {background:url(images/stop.svg) center/35% no-repeat; opacity: 0.8; padding-left: 1px;}

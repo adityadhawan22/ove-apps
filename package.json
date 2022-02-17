@@ -32,5 +32,6 @@
     "openseadragon": "2.4.2",
     "portfinder": "^1.0.28",
     "tslib": "^2.0.0"
-  }
+  },
+  "author": "Aditya Dhawan <adhawan@ic.ac.uk>"
 }

@@ -1,5 +1,5 @@
 module.exports = {
-  displayName: 'ove-app-images',
+  displayName: 'ove-app-alignment',
   preset: '../../jest.preset.js',
   globals: {
     'ts-jest': {
@@ -11,5 +11,5 @@ module.exports = {
     '^.+\\.[tj]sx?$': 'ts-jest',
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx'],
-  coverageDirectory: '../../coverage/apps/ove-app-images',
+  coverageDirectory: '../../coverage/apps/ove-app-alignment',
 };
