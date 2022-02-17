@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "start": "dotenv pm2 start pm2.json",
-    "serve": "nx run-many --target=serve",
+    "serve": "nx run-many --target=serve --all",
     "build": "nx run-many --target=build --all",
     "test": "nx test"
   },
