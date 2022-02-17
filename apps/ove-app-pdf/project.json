@@ -10,7 +10,7 @@
         "outputPath": "dist/apps/ove-app-pdf",
         "main": "apps/ove-app-pdf/src/index.js",
         "tsConfig": "apps/ove-app-pdf/tsconfig.app.json",
-        "assets": ["apps/ove-app-pdf/src/client"]
+        "assets": ["apps/ove-app-pdf/src"]
       },
       "configurations": {
         "production": {

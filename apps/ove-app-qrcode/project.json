@@ -10,7 +10,7 @@
         "outputPath": "dist/apps/ove-app-qrcode",
         "main": "apps/ove-app-qrcode/src/index.js",
         "tsConfig": "apps/ove-app-qrcode/tsconfig.app.json",
-        "assets": ["apps/ove-app-qrcode/src/client"]
+        "assets": ["apps/ove-app-qrcode/src"]
       },
       "configurations": {
         "production": {

@@ -10,7 +10,7 @@
         "outputPath": "dist/apps/ove-app-webrtc",
         "main": "apps/ove-app-webrtc/src/index.js",
         "tsConfig": "apps/ove-app-webrtc/tsconfig.app.json",
-        "assets": ["apps/ove-app-webrtc/src/client"]
+        "assets": ["apps/ove-app-webrtc/src"]
       },
       "configurations": {
         "production": {

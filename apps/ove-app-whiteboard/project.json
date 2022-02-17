@@ -10,7 +10,7 @@
         "outputPath": "dist/apps/ove-app-whiteboard",
         "main": "apps/ove-app-whiteboard/src/index.js",
         "tsConfig": "apps/ove-app-whiteboard/tsconfig.app.json",
-        "assets": ["apps/ove-app-whiteboard/src/client"]
+        "assets": ["apps/ove-app-whiteboard/src"]
       },
       "configurations": {
         "production": {

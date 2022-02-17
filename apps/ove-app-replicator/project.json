@@ -10,7 +10,7 @@
         "outputPath": "dist/apps/ove-app-replicator",
         "main": "apps/ove-app-replicator/src/index.js",
         "tsConfig": "apps/ove-app-replicator/tsconfig.app.json",
-        "assets": ["apps/ove-app-replicator/src/client"]
+        "assets": ["apps/ove-app-replicator/src"]
       },
       "configurations": {
         "production": {

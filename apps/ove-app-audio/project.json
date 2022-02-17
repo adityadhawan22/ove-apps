@@ -10,7 +10,7 @@
         "outputPath": "dist/apps/ove-app-audio",
         "main": "apps/ove-app-audio/src/index.js",
         "tsConfig": "apps/ove-app-audio/tsconfig.app.json",
-        "assets": ["apps/ove-app-audio/src/client"]
+        "assets": ["apps/ove-app-audio/src"]
       },
       "configurations": {
         "production": {

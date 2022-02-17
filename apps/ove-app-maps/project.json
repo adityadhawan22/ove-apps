@@ -10,7 +10,7 @@
         "outputPath": "dist/apps/ove-app-maps",
         "main": "apps/ove-app-maps/src/index.js",
         "tsConfig": "apps/ove-app-maps/tsconfig.app.json",
-        "assets": ["apps/ove-app-maps/src/client"]
+        "assets": ["apps/ove-app-maps/src"]
       },
       "configurations": {
         "production": {

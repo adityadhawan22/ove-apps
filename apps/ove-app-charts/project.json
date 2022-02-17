@@ -10,7 +10,7 @@
         "outputPath": "dist/apps/ove-app-charts",
         "main": "apps/ove-app-charts/src/index.js",
         "tsConfig": "apps/ove-app-charts/tsconfig.app.json",
-        "assets": ["apps/ove-app-charts/src/client"]
+        "assets": ["apps/ove-app-charts/src"]
       },
       "configurations": {
         "production": {
