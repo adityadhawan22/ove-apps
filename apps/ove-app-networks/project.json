@@ -9,7 +9,8 @@
       "options": {
         "outputPath": "dist/apps/ove-app-networks",
         "main": "apps/ove-app-networks/src/index.js",
-        "tsConfig": "apps/ove-app-networks/tsconfig.app.json"
+        "tsConfig": "apps/ove-app-networks/tsconfig.app.json",
+        "assets": ["apps/ove-app-networks/src/client"]
       },
       "configurations": {
         "production": {

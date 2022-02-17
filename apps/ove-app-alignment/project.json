@@ -9,7 +9,8 @@
       "options": {
         "outputPath": "dist/apps/ove-app-alignment",
         "main": "apps/ove-app-alignment/src/index.js",
-        "tsConfig": "apps/ove-app-alignment/tsconfig.app.json"
+        "tsConfig": "apps/ove-app-alignment/tsconfig.app.json",
+        "assets": ["apps/ove-app-alignment/src/client"]
       },
       "configurations": {
         "production": {
